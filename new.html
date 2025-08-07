@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>GitHub User Searcher</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="text-lg">GitHub User Searcher</h1>
+    </div>
+    <div class="main-container box">
+      <div class="search-wrapper box">
+        <form id="searchForm">
+          <input
+            type="text"
+            id="usernameInput"
+            class="box search-input text-med"
+            placeholder="🔎Enter GitHub UserName"
+            required
+          />
+          <button class="search-button box text-med2" id="search" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+
+      <div class="profile-card box" id="profile-card">
+        <div class="loading" id="loading">
+          <div class="circle loading-circle">
+            <div class="spinner"></div>
+          </div>
+          <p class="text-med2 loading-message">Fetching GitHub profile...</p>
+        </div>
+        <div class="error" id="error">
+          <div class="cross circle">X</div>
+          <p class="text-med2 error-message">
+            The GitHub user doesn't exist or the profile is private. Please
+            check the username once again.
+          </p>
+        </div>
+        <div id="profile-content">
+          <div class="profile-header">
+            <img src="Egg.png" id="avatar" alt="profile-avatar" />
+            <div class="profile-info-header" id="profile-info-header">
+              <p class="text-med3" id="name"></p>
+              <p class="text-small" id="username"></p>
+              <p class="text-small" id="user-bio"></p>
+            </div>
+          </div>
+          <div class="profile-info box">
+            <a href="#" id="profile-link" target="_blank">
+              <button
+                class="github-button box text-small"
+                id="github-button"
+                type="button"
+              >
+                View on GitHub
+              </button>
+            </a>
+            <div class="profile-boxes box" id="profile-infos">
+              <div class="box info-box" id="repos">
+                <p id="repo-count">10</p>
+                <p class="text-med2">Repositories</p>
+              </div>
+              <div class="box info-box" id="following">
+                <p id="following-count">50</p>
+                <p class="text-med2">Following</p>
+              </div>
+              <div class="box info-box" id="followers">
+                <p id="follower-count">100</p>
+                <p class="text-med2">Followers</p>
+              </div>
+              <div class="box info-box" id="gists">
+                <p id="gist-count">5</p>
+                <p class="text-med2">Gists</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
