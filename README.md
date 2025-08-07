@@ -26,6 +26,8 @@ The interface was carefully designed using **Figma** to create a modern, user-fr
 ## 🚀 Demo
 
 Simply enter a GitHub username in the search field and press "Search" to view the profile information instantly.
+<img src="https://github.com/user-attachments/assets/104180df-82ba-4cab-90da-20c6fe56ed12" />
+
 
 ## 🛠️ Technologies Used
 
