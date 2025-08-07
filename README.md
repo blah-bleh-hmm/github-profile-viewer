@@ -42,7 +42,7 @@ Simply enter a GitHub username in the search field and press "Search" to view th
 
 ```
 github-profile-viewer/
-├── new.html          # Main HTML file
+├── index.html          # Main HTML file
 ├── style.css         # Stylesheet with responsive design
 ├── script.js         # JavaScript functionality and API integration
 ├── headerImg.png     # Header background image
@@ -63,7 +63,7 @@ github-profile-viewer/
    ```
 
 3. **Open in browser**:
-   - Simply open `new.html` in your preferred web browser
+   - Simply open `index.html` in your preferred web browser
 
 
 4. **Start searching**:
